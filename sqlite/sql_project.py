@@ -123,7 +123,7 @@ elif task == 4:
     if sort == 1:
         option = input("enter the first name of the person")
         EmployeeDatabase.select_employee_by_first_name(option).sort()
-    if sort == 2:
+    elif sort == 2:
         option = input("enter the last name of the person")
         EmployeeDatabase.select_employee_by_last_name(option).sort()
     elif sort == 3:
