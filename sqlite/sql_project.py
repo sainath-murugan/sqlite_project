@@ -6,14 +6,14 @@ from datetime import datetime as date
 connection = sqlite3.connect("employee_data.db", detect_types=sqlite3.PARSE_COLNAMES | sqlite3.PARSE_DECLTYPES)
 cursor = connection.cursor()
 
-# cursor.execute("""CREATE TABLE employee (
-#                                     id integer,
-#                                      first name text,
-#                                      last name text,
-#                                      email_id text,
-#                                      date_of_joining timestamp,
-#                                      salary integer,
-#                                      gender text)""")
+cursor.execute("""CREATE TABLE employee (
+                                     id integer,
+                                      first name text,
+                                      last name text,
+                                      email_id text,
+                                      date_of_joining timestamp,
+                                      salary integer,
+                                      gender text)""")
 
 
 class EmployeeDatabase:
